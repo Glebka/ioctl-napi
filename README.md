@@ -7,6 +7,13 @@ ioctl using N-API for the linuxduino library.
 npm install ioctl-napi
 ```
 
+# Cross compile for Linux ARM
+
+```bash
+sudo apt install g++-arm-linux-gnueabihf
+npm run build:arm
+```
+
 # Example 
 
 ```js

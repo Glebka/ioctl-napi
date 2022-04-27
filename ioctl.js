@@ -1,10 +1,12 @@
 const os = require('os');
 
+const binding = require('node-gyp-build')(__dirname)
+
 // Export ioctl
-module.exports = require('bindings')('ioctl').ioctl;
+module.exports = binding.ioctl;
 
 // Export memAddress functions
-const bufferMemAddress = require('bindings')('ioctl').memAddress;
+const bufferMemAddress = binding.memAddress;
 Buffer.prototype.memAddress = function memAddress () {
   return bufferMemAddress(this);
 };

@@ -1,6 +1,6 @@
 {
   'targets': [{
-    'target_name': 'ioctl',
+    'target_name': 'binding',
 
     'sources': [
       'ioctl.cc'
