@@ -26,7 +26,8 @@
     "binding.gyp",
     "ioctl.cc",
     "ioctl.js",
-    "example.js"
+    "example.js",
+    "prebuilds"
   ],
   "gypfile": true,
   "devDependencies": {
