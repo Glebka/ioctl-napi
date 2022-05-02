@@ -5,7 +5,6 @@
   "description": "napi ioctl",
   "main": "ioctl.js",
   "dependencies": {
-    "bindings": "~1.5.0",
     "node-gyp-build": "^4.4.0"
   },
   "repository": {
@@ -16,7 +15,7 @@
   "scripts": {
     "test": "node example.js",
     "build:arm": "env-cmd -f ./arm.env prebuildify --napi --arch arm",
-    "install": "node-gyp-build"
+    "install": "node-gyp-build-test || true"
   },
   "keywords": [
     "ioctl",
